@@ -1,0 +1,36 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Imagem redonda com rosto centralizado */
+.ficha-de-personagem img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;          /* mantém proporção */
+    object-position: 80% 100%;   /* foca mais embaixo, mostrando o rosto */
+    border-radius: 50%;         /* deixa redonda */
+    border: 5px solid #f5f5f5;     /* borda branca */
+}
+
+.habilidades ul {
+    list-style: none;  
+    padding: 0;        
+    margin: 0;         
+} 
+
