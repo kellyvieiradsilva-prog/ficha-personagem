@@ -1,66 +1,55 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #0d0d0d;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #f5f5f5;
+  background-color: #ffa500;
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+  color: #4b2e05;
+  margin: 0;
+  padding: 0;
 }
 
-/* Container principal */
-.container {
-    background: #1c1c1c;
-    padding: 25px 40px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.7);
-    max-width: 1000px;
-    margin: 40px auto;
-}
-
-/* Títulos */
-h1 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #e62429;
-}
-
+/* Texto com leve brilho */
 h2 {
-    font-size: 1.6rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #2c7dfa;
+  color: #8A2BE2; /* Roxo */
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.6);
 }
 
-/* Foto do personagem redonda */
+/* Caixa branca onde fica a imagem */
+.caixa-snoopy {
+  width: 420px;
+  height: 420px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+/* Imagem ajustada */
 .personagem-foto {
-    width: 300px;            /* largura igual à altura */
-    height: 300px;           /* altura igual à largura */
-    object-fit: cover;       /* corta a imagem sem distorcer */
-    border-radius: 50%;      /* deixa em círculo */
-    display: block;     
-    margin: 40px auto 20px;  /* centraliza a imagem */
-    border: 4px solid #000;  /* borda preta opcional */
-    overflow: hidden;        
-    object-position: center 100% /* centraliza o rosto */
+    width: 350px;
+    height: 350px; /* define um “recorte” */
+    object-fit: cover; /* faz o corte automático */
+    object-position: 10px; /* foca a parte de cima */
+    border-radius: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Habilidades */
-.habilidades ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+
+/* Caixa verde inferior */
+.texto-verde {
+  background-color: #2e8b57;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.habilidades li {
-    margin: 8px 0;
-    padding-left: 25px;
-    position: relative;
-}
 
-.habilidades li::before {
-    content: "🕸️";
-    position: absolute;
-    left: 0;
-}
+
 
